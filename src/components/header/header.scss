@@ -1,49 +1,179 @@
-.header{
+.header {
     width: 100%;
-    height: 100px;
+    height: auto;
     background-color: yellow;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
-    .top-header{
-        width: 1366px;
-        height: 20px;
-        background-color: black;
-        color: gray;
+    .top-bg {
+        width: 100%;
+        height: 30px;
         display: flex;
-        justify-content: space-between;
+        text-align: center;
+        justify-content: center;
+        background-color: #131014;
 
-        .left-bar{
-            width: 50%;
-            height: 100%;
-            text-align: start;
-        }
+        .top-header {
+            min-width: 1366px;
+            display: flex;
+            justify-content: space-between;
 
-        .right-bar{
-            width: 50%;
-            height: 100%;
-            text-align: end;
-
-            ul{
+            .left-bar {
+                width: 50%;
+                height: 100%;
                 display: flex;
-                
+                align-items: center;
+                text-align: start;
+                padding-left: 10px;
+
+
+                span {
+                    font-family: 'poppins';
+                    font-weight: 600;
+                    font-size: 13px;
+                    color: #a5a5a5;
+                }
+            }
+
+            .right-bar {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-right: 10px;
+
+
+                .socials {
+                    padding-right: 20px;
+
+                    ul {
+                        display: flex;
 
 
 
-                li{
+
+                        li {
+                            padding: 5px;
+
+                            img {
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                }
+
+                .email {
 
 
-                    img{
-                        width: 20px;
-                        height: 20px;
+
+                    p {
+                        span {
+                            padding-right: 15px;
+                            color: #E3A102;
+                        }
+
+                        a {
+                            color: #a5a5a5;
+                        }
                     }
                 }
             }
         }
     }
 
+    .main-header-top {
+        width: 1366px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        text-align: center;
 
+
+        .main-header-center {
+            width: 100%;
+            height: 130px;
+            background-color: purple;
+            display: flex;
+            align-items: center;
+            padding: 0px 20px;
+            justify-content: space-between;
+            border-radius: 0px 0px 10px 10px;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+
+
+            .main-header-left{
+                width: 30%;
+                text-align: left;
+            }
+
+            .main-header-right{
+                width: 70%;
+
+                ul{
+                    display: flex;
+                    justify-content: end;
+
+                    li{
+                        font-weight: 600;
+                        width: 130px;
+                        height: 50px;
+                        transform: skewX(-16deg);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        a{
+                            font-weight: 600;
+                            font-family: 'poppins';
+                            width: 130px;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        a:active {
+                            font-weight: 600;
+                            font-family: 'poppins';
+                            background-color: #E3A102;
+                            width: 130px;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        a:hover {
+                            font-weight: 600;
+                            font-family: 'poppins';
+                            background-color: #E3A102;
+                            width: 130px;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            animation: menubtn 2s linear;
+                        }
+
+
+                        @keyframes menubtn {
+                            0% {
+                                background-color: 0;
+                            }
+                            100% {left: 1;}
+                          }
+                        
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
 
 }
