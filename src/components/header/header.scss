@@ -1,0 +1,49 @@
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .top-header{
+        width: 1366px;
+        height: 20px;
+        background-color: black;
+        color: gray;
+        display: flex;
+        justify-content: space-between;
+
+        .left-bar{
+            width: 50%;
+            height: 100%;
+            text-align: start;
+        }
+
+        .right-bar{
+            width: 50%;
+            height: 100%;
+            text-align: end;
+
+            ul{
+                display: flex;
+                
+
+
+
+                li{
+
+
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
