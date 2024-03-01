@@ -108,72 +108,72 @@
             -webkit-backdrop-filter: blur(5px);
 
 
-            .main-header-left{
+            .main-header-left {
                 width: 30%;
                 text-align: left;
             }
 
-            .main-header-right{
+            .main-header-right {
                 width: 70%;
 
-                ul{
-                    display: flex;
-                    justify-content: end;
 
-                    li{
-                        font-weight: 600;
-                        width: 130px;
-                        height: 50px;
-                        transform: skewX(-16deg);
+                .navigation {
+                    width: 95%;
+                    height: auto;
+
+                    ul {
                         display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        a{
-                            font-weight: 600;
-                            font-family: 'poppins';
-                            width: 130px;
-                            height: 50px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                        }
-                        a:active {
-                            font-weight: 600;
-                            font-family: 'poppins';
-                            background-color: #E3A102;
-                            width: 130px;
-                            height: 50px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                        }
-                        a:hover {
-                            font-weight: 600;
-                            font-family: 'poppins';
-                            background-color: #E3A102;
-                            width: 130px;
-                            height: 50px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            animation: menubtn 2s linear;
-                        }
+                        gap: 10px;
 
 
-                        @keyframes menubtn {
-                            0% {
-                                background-color: 0;
+                        li {
+                            position: relative;
+                            // background-color: #E4A101;
+                            // transform: skewX(-16deg);
+
+                            a {
+                                color: white;
+                                padding: 15px 23px;
                             }
-                            100% {left: 1;}
-                          }
-                        
-                        
+
+                            a::before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                height: 100%;
+                                width: 100%;
+                                // transform: skewX(-10deg);
+                                z-index: 1;
+                                right: 0;
+                                margin: 0 auto;
+                                // opacity: 1;
+                                transform: skewX(-16deg);
+                                transition: .3s linear;
+                            }
+
+                            // a:hover {
+                            //     color: black;
+
+                            // }
+                            a.active {
+                                color: black;
+
+                            }
+                        }
+
+                        // li:hover {
+                        //     padding: 15px 20px 15px 20px;
+                        //     background-color: #E4A101;
+                        //     transform: skewX(-16deg);
+                        //     color: black;
+                        // }
                     }
-                    
                 }
             }
+
+
+
         }
     }
-
 }
