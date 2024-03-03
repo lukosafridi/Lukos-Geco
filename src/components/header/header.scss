@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     height: auto;
-    background-color: yellow;
+    background-color: purple;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,42 +123,47 @@
 
                     ul {
                         display: flex;
-                        gap: 10px;
+                        // gap: 10px;
 
 
                         li {
                             position: relative;
                             // background-color: #E4A101;
-                            // transform: skewX(-16deg);
+                            transform: skewX(-16deg);
 
                             a {
                                 color: white;
                                 padding: 15px 23px;
+                                margin: -1px;
                             }
 
-                            a::before {
-                                content: "";
-                                position: absolute;
-                                left: 0;
-                                top: 0;
-                                height: 100%;
-                                width: 100%;
-                                // transform: skewX(-10deg);
-                                z-index: 1;
-                                right: 0;
-                                margin: 0 auto;
-                                // opacity: 1;
-                                transform: skewX(-16deg);
-                                transition: .3s linear;
-                            }
-
-                            // a:hover {
-                            //     color: black;
-
+                            // a::before {
+                            //     content: "";
+                            //     position: absolute;
+                            //     left: 0;
+                            //     top: 0;
+                            //     height: 100%;
+                            //     width: 100%;
+                            //     // transform: skewX(-10deg);
+                            //     z-index: 1;
+                            //     right: 0;
+                            //     margin: 0 auto;
+                            //     // opacity: 1;
+                            //     transform: skewX(-16deg);
+                            //     transition: .3s linear;
                             // }
+
+                            a:hover {
+                                color: black;
+                                background-color: #E3A102;
+                                transition: 0.3s ease-in linear;
+
+                            }
+
                             a.active {
                                 color: black;
-
+                                background-color: #E3A102;
+                                transition: 0.3s linear;
                             }
                         }
 
