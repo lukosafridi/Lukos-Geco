@@ -10,12 +10,12 @@ function App() {
     <>
       <div>
         <BrowserRouter>
-        <div className="head-main">
+        <div className="head-div">
           <Header />
         </div>
-        <div className="hero-main">
+        
           <Hero />
-        </div>
+        
 
         </BrowserRouter>
       </div>

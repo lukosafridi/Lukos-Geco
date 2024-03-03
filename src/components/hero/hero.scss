@@ -1,0 +1,114 @@
+.hero-main {
+    width: 100%;
+    height: 100vh;
+    // background-color: green;
+    background: url(../../assets/slider_bg02.jpg);
+    display: flex;
+    justify-content: center;
+
+
+    .hero-center {
+        width: 1366px;
+
+
+
+        .hero-left {
+            width: 50%;
+            height: 100%;
+
+
+            .text-container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                // vertical-align: middle;
+                /* align-items: center; */
+                /* text-align: center; */
+                // margin: auto;
+                justify-content: center;
+
+
+                h6 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    font-family: poppins;
+                    text-transform: uppercase;
+                    color: var(--primarycolor);
+                }
+
+                h2 {
+                    font-family: 'Oxanium';
+                    font-size: 90px;
+                    letter-spacing: -3px;
+                    font-weight: 900;
+                    line-height: 90px;
+                    color: white;
+
+                    span {
+                        color: var(--primarycolor);
+                    }
+                }
+
+                p {
+                    font-weight: 400;
+                    color: #dbdbdb;
+                    width: 80%;
+                    margin: 0 0 45px;
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+
+
+                a::before {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    transform: skewX(-16deg);
+                    z-index: -1;
+                    opacity: 1;
+                    background-image: none;
+                    bottom: 0;
+                    border-radius: 0;
+                    left: auto;
+                    background-color: #e4a101;
+                }
+
+
+                a {
+                    width: 100px;
+                    font-family: poppins;
+                    font-size: 15;
+                    font-weight: 700;
+                    color: black;
+                    background: transparent;
+                    padding: 20px 35px;
+                    margin: 0 8px;
+                    position: relative;
+                }
+
+                
+
+                a::after {
+                    content: "";
+                    position: absolute;
+                    right: -13px;
+                    top: 0;
+                    height: 100%;
+                    width: 5px;
+                    transform: skewX(-16deg);
+                    z-index: 1;
+                    opacity: 1;
+                    background-image: none;
+                    bottom: 0;
+                    border-radius: 0;
+                    left: auto;
+                    background-color: #e4a101;
+                }
+            }
+        }
+    }
+}

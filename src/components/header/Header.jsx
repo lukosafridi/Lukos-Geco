@@ -6,8 +6,19 @@ import twitter from '../../assets/twitter.png';
 import instagram from '../../assets/instagram.png';
 import linkedin from '../../assets/linkedin.png';
 import logo from '../../assets/logo.png';
+import { motion } from 'framer-motion';
 
 const Header = () => {
+
+    const socialvariants = {
+        hover: {
+            scale: 1.1,
+        }
+    }
+
+
+
+
     const navItems = [
         {
             name: 'HOME',
@@ -40,7 +51,9 @@ const Header = () => {
     ];
 
     return (
-        <div className="header">
+        <motion.div className="header"
+            variants={socialvariants}
+        >
             <div className='top-bg'>
                 <div className='top-header'>
                     <div className='left-bar'>
@@ -50,16 +63,33 @@ const Header = () => {
                         <div className="socials">
                             <ul>
                                 <li>
-                                    <img src={instagram} alt="" />
+                                    <motion.img
+                                        whileHover={{
+                                            scale: 1.2,
+                                        }}
+                                        src={instagram}
+                                        alt="" />
                                 </li>
                                 <li>
-                                    <img src={twitter} alt="" />
+                                    <motion.img
+                                        whileHover={{
+                                            scale: 1.2,
+                                        }}
+                                        src={twitter} alt="" />
                                 </li>
                                 <li>
-                                    <img src={linkedin} alt="" />
+                                    <motion.img
+                                        whileHover={{
+                                            scale: 1.2,
+                                        }}
+                                        src={linkedin} alt="" />
                                 </li>
                                 <li>
-                                    <img src={facebook} alt="" />
+                                    <motion.img
+                                        whileHover={{
+                                            scale: 1.2,
+                                        }}
+                                        src={facebook} alt="" />
                                 </li>
                             </ul>
                         </div>
@@ -108,7 +138,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
