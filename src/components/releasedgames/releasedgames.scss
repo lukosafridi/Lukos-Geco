@@ -1,0 +1,50 @@
+.releasedgames-main {
+    width: 100%;
+    height: 100vh;
+    // background-color: purple;
+
+
+
+    .releasedgames-text-container {
+        width: 100%;
+        height: 30%;
+        // background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        h2 {
+            font-size: 36px;
+            font-family: 'Oxanium';
+            font-weight: 800;
+
+            span{
+                color: var(--primarycolor);
+            }
+        }
+
+        p {
+            position: relative;
+            color: rgb(108, 108, 108);
+            font-size: 15px;
+            line-height: 28px;
+            width: 561px;
+            text-align: center;
+            font-family: 'Poppins';
+            font-weight: 500;
+        }
+
+        p::before {
+            content: "";
+            background-image: url(/src/assets/title_bar.png);
+            position: absolute;
+            left: 150px;
+            bottom: -35px;
+            width: 270px;
+            height: 13px;
+            background-repeat: no-repeat;
+        }
+    }
+}
