@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import releasedgameimg01 from '../../assets/released_game_img01.jpg';
 import releasedgameimg02 from '../../assets/released_game_img02.jpg';
 import releasedgameimg03 from '../../assets/released_game_img03.jpg';
-import releasedgameimg03 from '../../assets/release_game_nav02.jpg';
+import releasedgamenav02 from '../../assets/release_game_nav02.jpg';
 
 
 
@@ -117,7 +117,7 @@ const Responsive2 = () => {
 
   const releasedgames = [
     {
-      img: releasedgameimg01,
+      img: releasedgamenav02,
     },
     {
       img: releasedgameimg02,
