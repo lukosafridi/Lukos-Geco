@@ -1,14 +1,20 @@
 import React from 'react';
 import './releasedgames.scss';
 import Slider from "react-slick";
+import { motion } from 'framer-motion';
 import releasedgameimg01 from '../../assets/released_game_img01.jpg';
 import releasedgameimg02 from '../../assets/released_game_img02.jpg';
 import releasedgameimg03 from '../../assets/released_game_img03.jpg';
+import releasedgamenav01 from '../../assets/release_game_nav01.jpg';
 import releasedgamenav02 from '../../assets/release_game_nav02.jpg';
+import releasedgamenav03 from '../../assets/release_game_nav03.jpg';
 
 
 
 const Responsive = () => {
+
+
+  
 
   const releasedgames = [
     {
@@ -117,13 +123,13 @@ const Responsive2 = () => {
 
   const releasedgames = [
     {
+      img: releasedgamenav01,
+    },
+    {
       img: releasedgamenav02,
     },
     {
-      img: releasedgameimg02,
-    },
-    {
-      img: releasedgameimg03,
+      img: releasedgamenav03,
     },
   ]
 
@@ -187,6 +193,19 @@ const Responsive2 = () => {
 
 
 const Releasedgames = () => {
+
+  const veriimgs = [
+    {
+      img: releasedgamenav01
+    },
+    {
+      img: releasedgamenav02
+    },
+    {
+      img: releasedgamenav03
+    },
+  ]
+
   return (
     <div className='releasedgames-main'>
       <div className="releasedgames-text-container">
@@ -198,7 +217,19 @@ const Releasedgames = () => {
           <Responsive />
         </div>
         <div className="veri-slider">
-          <Responsive2 />
+          {veriimgs.map((imgs) =>{
+            return ( 
+            <motion.img
+            whileHover={{
+              scale:1.1, transition:{ duration:.1 }
+            }}
+            whileTap={{
+              scale:.9, transition:{ duration:.1 }
+            }}
+            src={imgs.img} alt="" /> 
+            )
+          })}
+          {/* <Responsive2 /> */}
         </div>
       </div>
     </div>

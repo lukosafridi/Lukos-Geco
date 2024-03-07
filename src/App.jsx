@@ -3,6 +3,7 @@ import Header from "./components/header/Header"
 import { BrowserRouter, Route, Router } from "react-router-dom"
 import Hero from "./components/hero/Hero"
 import Releasedgames from "./components/releasedgames/Releasedgames"
+import Forgamers from "./components/forgamers/Forgamers"
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
           </div>
           <div className="released-games-main">
             <Releasedgames />
+          </div>
+          <div className="for-gamers-main">
+            <Forgamers />
           </div>
 
         </BrowserRouter>
