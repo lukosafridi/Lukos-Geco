@@ -113,12 +113,12 @@ const Header = () => {
                                 <ul>
 
 
-                                    {navItems.map((navitem) => (
+                                    {navItems.map((navitem, index) => (
                                         // <div key={navitem.name} className='navigation'>
-                                        <li>
+                                        <li key={index}>
                                             <NavLink
                                                 to={navitem.href}
-                                                activeClassName="active"
+                                                activeclassname="active"
                                             >
                                                 {navitem.name}
                                             </NavLink>
