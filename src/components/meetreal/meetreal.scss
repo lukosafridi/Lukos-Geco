@@ -1,0 +1,136 @@
+.meet-real-main {
+    width: 100%;
+    height: 750px;
+    background-image: url(../../assets/cta_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .meet-real-center {
+        width: 1366px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        .img-container{
+            flex: 0 0 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-container{
+            flex: 0 0 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            img{
+                width: 40px;
+                padding-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 50px;
+                font-family: oxanium;
+                font-weight: 800;
+                color: white;
+                padding-bottom: 10px;
+
+                span {
+                    color: var(--primarycolor);
+                }
+            }
+
+
+            .top-div-p {
+                font-size: 15px;
+                font-family: poppins;
+                font-weight: 500;
+                color: #cbcbcb;
+                line-height: 28px;
+                position: relative;
+                width: 70%;
+
+            }
+
+            .top-div-p::before {
+                content: "";
+                background-image: url(/src/assets/title_bar03.png);
+                position: absolute;
+                left: 0;
+                bottom: -35px;
+                width: 270px;
+                height: 13px;
+                background-repeat: no-repeat;
+
+            }
+
+
+
+            a::before {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                transform: skewX(-16deg);
+                z-index: -1;
+                opacity: 1;
+                background-image: none;
+                bottom: 0;
+                border-radius: 0;
+                left: auto;
+                background-color: #e4a101;
+            }
+
+
+            a {
+                width: 100px;
+                font-family: poppins;
+                font-size: 15px;
+                font-weight: 700;
+                color: black;
+                background: transparent;
+                padding: 15px 35px;
+                margin: 0 8px;
+                position: relative;
+                z-index: 1;
+                margin-top: 70px;
+            }
+
+
+
+            a::after {
+                content: "";
+                position: absolute;
+                right: -13px;
+                top: 0;
+                height: 100%;
+                width: 5px;
+                transform: skewX(-16deg);
+                z-index: 1;
+                opacity: 1;
+                background-image: none;
+                bottom: 0;
+                border-radius: 0;
+                left: auto;
+                background-color: #e4a101;
+            }
+
+            a:hover::after {
+                right: -3px;
+                transition: .3s linear;
+            }
+        }
+    }
+}

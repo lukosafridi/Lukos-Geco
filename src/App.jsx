@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Router } from "react-router-dom"
 import Hero from "./components/hero/Hero"
 import Releasedgames from "./components/releasedgames/Releasedgames"
 import Forgamers from "./components/forgamers/Forgamers"
+import Featuredgames from "./components/featuredgames/Featuredgames"
+import Meetreal from "./components/meetreal/Meetreal"
 
 function App() {
 
@@ -23,6 +25,12 @@ function App() {
           </div>
           <div className="for-gamers-main">
             <Forgamers />
+          </div>
+          <div>
+            <Featuredgames />
+          </div>
+          <div>
+            <Meetreal />
           </div>
 
         </BrowserRouter>
