@@ -6,6 +6,7 @@ import Releasedgames from "./components/releasedgames/Releasedgames"
 import Forgamers from "./components/forgamers/Forgamers"
 import Featuredgames from "./components/featuredgames/Featuredgames"
 import Meetreal from "./components/meetreal/Meetreal"
+import Productscorner from "./components/productscorner/Productscorner"
 
 function App() {
 
@@ -31,6 +32,9 @@ function App() {
           </div>
           <div>
             <Meetreal />
+          </div>
+          <div>
+            <Productscorner />
           </div>
 
         </BrowserRouter>

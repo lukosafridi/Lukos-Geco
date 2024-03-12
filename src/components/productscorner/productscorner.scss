@@ -1,0 +1,287 @@
+.products-corner-main {
+    width: 100%;
+    height: 800px;
+    background-color: #1C181E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+
+    .main-center {
+        width: 1366px;
+        height: 100%;
+        // background-color: burlywood;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+
+        .products-top-container {
+            width: 100%;
+            // height: 400px;
+            // background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // padding-bottom: 100px;
+            // background-color: brown;
+
+
+            h2 {
+                font-size: 36px;
+                font-family: 'Oxanium';
+                font-weight: 800;
+                color: white;
+
+                span {
+                    color: var(--primarycolor);
+                }
+            }
+
+            p {
+                position: relative;
+                color: #cbcbcb;
+                font-size: 15px;
+                line-height: 28px;
+                width: 561px;
+                text-align: center;
+                font-family: 'Poppins';
+                font-weight: 500;
+            }
+
+            p::before {
+                content: "";
+                background-image: url(/src/assets/title_bar03.png);
+                position: absolute;
+                left: 150px;
+                bottom: -35px;
+                width: 270px;
+                height: 13px;
+                background-repeat: no-repeat;
+            }
+        }
+
+
+        .products-slider {
+            width: 1366px;
+            position: relative;
+            height: 450px;
+            gap: 10px;
+            display: flex;
+            justify-content: space-evenly;
+
+
+            .hori-slider {
+                flex: 0 0 100%;
+                height: 450px;
+                overflow: hidden;
+                // box-shadow: 0px 0px 15px -3px gray;
+                // border-radius: 10px;
+                // background-color: aquamarine;
+
+
+
+                .slider-container {
+
+
+
+                    .slick-slider {
+
+
+                        .slick-list {
+
+
+                            .slick-track {
+                                display: flex;
+
+
+                                .slick-slide {
+                                    height: 450px;
+                                    // background-color: white;
+
+
+                                    .slide-box {
+                                        display: flex !important;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+
+                                        .item-image {
+                                            // padding: 25px;
+                                            height: 243px;
+                                            position: relative;
+                                            width: 100%;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+
+
+
+                                            img {
+                                                position: absolute;
+                                                top: 0;
+                                                width: 278px;
+                                                height: 243px;
+                                                object-fit: cover;
+                                                z-index: 3;
+                                            }
+                                        }
+
+                                        .item-text-container {
+                                            justify-content: center;
+                                            width: 100%;
+                                            display: flex;
+                                            flex-direction: column;
+                                            /* padding-left: 20px; */
+                                            align-items: center;
+
+
+
+                                            h5 {
+                                                font-size: 16px;
+                                                font-family: poppins;
+                                                font-weight: 700;
+                                                color: white;
+
+                                                span {
+                                                    color: #e4a101;
+                                                    padding-left: 10px;
+                                                }
+                                            }
+
+                                            h4 {
+                                                z-index: 2;
+                                                position: relative;
+                                                padding: 20px 0px;
+                                                font-size: 20px;
+                                                font-family: poppins;
+                                                font-weight: 700;
+                                                color: white;
+
+                                                // span {
+                                                //     color: white;
+                                                // }
+                                            }
+
+                                            // h4::before {
+                                            //     content: "";
+                                            //     background-image: url(/src/assets/released_game_brush.png);
+                                            //     height: 98px;
+                                            //     width: 320px;
+                                            //     left: -100px;
+                                            //     top: 12px;
+                                            //     background-size: contain;
+                                            //     background-repeat: no-repeat;
+                                            //     position: absolute;
+                                            //     z-index: -1;
+                                            // }
+
+
+                                            ul {
+                                                margin: 0;
+                                                padding-bottom: 20px;
+
+                                                li {
+                                                    font-family: poppins;
+                                                    font-size: 14px;
+                                                    font-weight: 600;
+                                                    color: #413b43;
+                                                    margin-bottom: 10px;
+
+
+                                                    span {
+                                                        font-family: poppins;
+                                                        font-size: 14px;
+                                                        font-weight: 600;
+                                                        color: #6c6c6c;
+                                                        padding-left: 10px;
+                                                    }
+                                                }
+                                            }
+
+                                            p {
+                                                font-family: poppins;
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                color: #6c6c6c;
+                                                margin-bottom: 30px;
+                                                padding-right: 30px;
+
+                                            }
+
+                                            a::before {
+                                                content: "";
+                                                position: absolute;
+                                                right: 0;
+                                                top: 0;
+                                                height: 100%;
+                                                width: 100%;
+                                                transform: skewX(-16deg);
+                                                z-index: -1;
+                                                opacity: 1;
+                                                background-image: none;
+                                                bottom: 0;
+                                                border-radius: 0;
+                                                left: auto;
+                                                background-color: #e4a101;
+                                            }
+
+
+                                            a {
+                                                width: 100px;
+                                                font-family: poppins;
+                                                text-transform: uppercase;
+                                                text-align: center;
+                                                font-size: 11px;
+                                                font-weight: 700;
+                                                color: black;
+                                                background: transparent;
+                                                padding: 5px 0;
+                                                margin: 0 8px;
+                                                position: relative;
+                                                z-index: 4;
+                                                margin-top: -15px;
+                                            }
+
+
+
+                                            // a::after {
+                                            //     content: "";
+                                            //     position: absolute;
+                                            //     right: -11px;
+                                            //     top: 0;
+                                            //     height: 100%;
+                                            //     width: 5px;
+                                            //     transform: skewX(-16deg);
+                                            //     z-index: 1;
+                                            //     opacity: 1;
+                                            //     background-image: none;
+                                            //     bottom: 0;
+                                            //     border-radius: 0;
+                                            //     left: auto;
+                                            //     background-color: #e4a101;
+                                            // }
+
+                                            // a:hover::after {
+                                            //     right: -4px;
+                                            //     transition: .3s linear;
+                                            // }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                        .slick-arrow {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
