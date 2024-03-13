@@ -17,46 +17,26 @@ const Responsive = () => {
     const releasedgames = [
         {
             img: sproductimg01,
-            rating: "5 stars",
-            title: "Call of Duty",
-            // span: "of Duty",
-            category: "Virtual Game",
-            model: "Compete 100 players",
-            Controller: "Playstation 5 , Xbox , PS4",
-            description: "Compete with 100 players on a remote thats island for winner takes showdown known issue",
+            title: "Women Black T-shirt",
+            price: "29.00",
             href: "#"
         },
         {
             img: sproductimg02,
-            rating: "5 stars",
-            title: "Battle Grounds",
-            // span: "Grounds",
-            category: "Virtual Game",
-            model: "Compete 100 players",
-            Controller: "Playstation 5 , Xbox , PS4",
-            description: "Compete with 100 players on a remote thats island for winner takes showdown known issue",
+            title: "Gears 5 Xbox Controller",
+            price: "29.00",
             href: "#"
         },
         {
             img: sproductimg03,
-            rating: "5 stars",
-            title: "Monster Hunte",
-            // span: "Hunter",
-            category: "Virtual Game",
-            model: "Compete 100 players",
-            Controller: "Playstation 5 , Xbox , PS4",
-            description: "Compete with 100 players on a remote thats island for winner takes showdown known issue",
+            title: "GeForce RTX 2070",
+            price: "29.00",
             href: "#"
         },
         {
             img: sproductimg04,
-            rating: "5 stars",
-            title: "Monster Hunte",
-            // span: "Hunter",
-            category: "Virtual Game",
-            model: "Compete 100 players",
-            Controller: "Playstation 5 , Xbox , PS4",
-            description: "Compete with 100 players on a remote thats island for winner takes showdown known issue",
+            title: "Virtual Reality Smiled",
+            price: "29.00",
             href: "#"
         },
     ]
@@ -113,6 +93,7 @@ const Responsive = () => {
                             </div>
                             <div className="title-container">
                                 <Link to="google">{games.title}</Link>
+                                <h4 className='price' to="google">${games.price}</h4>
                             </div>
                             {/* <h4>{games.title}<span>{games.span}</span></h4>
                             <ul>
