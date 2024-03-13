@@ -5,6 +5,7 @@ import sproductimg01 from '../../assets/s_product_img01.jpg';
 import sproductimg02 from '../../assets/s_product_img02.jpg';
 import sproductimg03 from '../../assets/s_product_img03.jpg';
 import sproductimg04 from '../../assets/s_product_img04.jpg';
+import { Link } from 'react-router-dom';
 
 
 
@@ -106,8 +107,13 @@ const Responsive = () => {
                         </div>
                         <div className="item-text-container">
                             {/* <h5>Rating :<span>{games.rating}</span></h5> */}
-                            <a href={games.href}>VR-BOX</a>
-                            <h4>{games.title}</h4>
+                            <div className="vrbtn">
+                                <Link to={games.href}>VR-BOX</Link>
+
+                            </div>
+                            <div className="title-container">
+                                <Link to="google">{games.title}</Link>
+                            </div>
                             {/* <h4>{games.title}<span>{games.span}</span></h4>
                             <ul>
                                 <li>Category : <span>{games.category}</span></li>
