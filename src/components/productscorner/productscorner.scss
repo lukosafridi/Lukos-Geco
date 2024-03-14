@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    // margin-bottom: 100px;
     padding-top: 50px;
 
 
@@ -124,15 +124,19 @@
                                             align-items: center;
                                             justify-content: center;
 
+                                            a {
+                                                // position: absolute;
+                                                // top: 0;
+                                                // width: 320px;
+                                                // height: 280px;
+                                                // object-fit: cover;
+                                                // z-index: 3;
 
-
-                                            img {
-                                                position: absolute;
-                                                top: 0;
-                                                width: 320px;
-                                                height: 280px;
-                                                object-fit: cover;
-                                                z-index: 3;
+                                                img {
+                                                    
+                                                    height: 280px;
+                                                    
+                                                }
                                             }
                                         }
 

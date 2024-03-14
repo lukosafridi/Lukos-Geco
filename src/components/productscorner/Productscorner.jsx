@@ -83,7 +83,7 @@ const Responsive = () => {
                 {releasedgames.map((games, index) => (
                     <div className='slide-box' key={index}>
                         <div className="item-image">
-                            <img src={games.img} alt="" />
+                            <Link to="facebook"><img src={games.img} alt="Image Not Available" /></Link>
                         </div>
                         <div className="item-text-container">
                             {/* <h5>Rating :<span>{games.rating}</span></h5> */}
