@@ -8,6 +8,7 @@ import Featuredgames from "./components/featuredgames/Featuredgames"
 import Meetreal from "./components/meetreal/Meetreal"
 import Productscorner from "./components/productscorner/Productscorner"
 import Latestnews from "./components/latestnews/Latestnews"
+import Footer from "./components/footer/Footer"
 
 function App() {
 
@@ -40,7 +41,9 @@ function App() {
           <div>
             <Latestnews />
           </div>
-
+          <div>
+            <Footer />
+          </div>
         </BrowserRouter>
       </div>
     </>
