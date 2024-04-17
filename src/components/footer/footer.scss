@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    padding-top: 50px;
 
     .footer-top {
         width: 1366px;
@@ -142,8 +143,8 @@
                 color: #90949c;
                 margin-bottom: 15px;
                 font-weight: 500;
-                
-                a{
+
+                a {
                     transition: all .3s linear;
                 }
 
@@ -199,6 +200,7 @@
                 font-weight: 500;
                 transition: all .3s linear;
             }
+
             a:hover {
                 color: var(--primarycolor);
                 transform: translateX(10px);
@@ -239,6 +241,7 @@
                 font-weight: 500;
                 transition: all .3s linear;
             }
+
             a:hover {
                 color: var(--primarycolor);
                 transform: translateX(10px);
@@ -247,7 +250,7 @@
 
         .f-col4 {
             flex: 0 0 25%;
-            /* height: 100%; */
+            height: 63%;
             display: flex;
             flex-direction: column;
             margin-top: -30px;
@@ -268,6 +271,58 @@
                 background-color: #e4a101;
                 margin-bottom: 40px;
             }
+
+            ul {
+                display: flex;
+                gap: 20px;
+
+                img {
+                    width: 30px;
+                    transition: all .2s linear;
+                }
+
+                img:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        width: 100%;
+        height: 100px;
+        background-color: #140a1c;
+        display: flex;
+        justify-content: center;
+
+        .bootom-center {
+            width: 1366px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            .copyright {
+                width: 50%;
+
+                p {
+                    font-size: 14px;
+                    font-family: 'Poppins';
+                    color: #90949c;
+                    margin-bottom: 0;
+                    font-weight: 500;
+                    line-height: 28px;
+
+                    a {
+                        color: var(--primarycolor);
+                    }
+                }
+            }
+
+            .payment-partners {
+                width: 50%;
+                display: flex;
+                justify-content: flex-end;
+            }
         }
     }
 }
@@ -280,7 +335,7 @@
     background-repeat: no-repeat;
     position: absolute;
     left: 50px;
-    bottom: 0;
+    bottom: 75px;
 }
 
 .main-div-footer::after {
@@ -291,5 +346,5 @@
     background-repeat: no-repeat;
     position: absolute;
     right: 50px;
-    bottom: 0;
+    bottom: 75px;
 }

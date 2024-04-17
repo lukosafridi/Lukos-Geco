@@ -5,6 +5,11 @@ import logo from '../../assets/logo.png';
 import envelopeopen from '../../assets/envelope_open.png';
 import headphone from '../../assets/headphone.png';
 import location from '../../assets/location.png';
+import facebook from '../../assets/facebook.png';
+import twitter from '../../assets/twitter.png';
+import instagram from '../../assets/instagram.png';
+import linkedin from '../../assets/linkedin.png';
+import card_img from '../../assets/card_img.png';
 import { Link } from 'react-router-dom';
 
 
@@ -57,6 +62,25 @@ const Footer = () => {
         },
     ]
 
+    const social = [
+        {
+            icon: twitter,
+            send: "#"
+        },
+        {
+            icon: instagram,
+            send: "#"
+        },
+        {
+            icon: facebook,
+            send: "#"
+        },
+        {
+            icon: linkedin,
+            send: "#"
+        },
+    ]
+
 
 
     return (
@@ -98,9 +122,23 @@ const Footer = () => {
                 <div className="f-col4">
                     <h5>Products</h5>
                     <span></span>
-                    {needhelp.map((item, index) => (
-                        <Link key={index} to={item.send}>{item.title}</Link>
-                    ))}
+                    <ul className='socials'>
+                        {social.map((item, index) => (
+                            <li>
+                                <Link key={index} to={item.send}><img src={item.icon} alt="" /></Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+            <div className='footer-bottom'>
+                <div className='bootom-center'>
+                    <div className='copyright'>
+                        <p>Copyright © 2024 <Link to="#">Geco</Link> All Rights Reserved.</p>
+                    </div>
+                    <div className='payment-partners'>
+                        <img src={card_img} alt="" />
+                    </div>
                 </div>
             </div>
         </div>
