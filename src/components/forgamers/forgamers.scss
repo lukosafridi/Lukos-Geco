@@ -80,6 +80,7 @@
                             border: 6px solid #333240;
                             background-image: url(../../assets/gamer_list_icon_bg.jpg);
                             background-size: cover;
+                            transition: all .5s ease-in;
                         }
 
 
@@ -114,7 +115,7 @@
                         .icon {
                             
                             border: 6px solid var(--primarycolor);
-                            transition: all .5s ease-in;
+                            
                         }
                     }
                 }

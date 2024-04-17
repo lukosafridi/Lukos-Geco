@@ -126,11 +126,12 @@
                 border-radius: 0;
                 left: auto;
                 background-color: #e4a101;
+                transition: .3s linear;
             }
 
             a:hover::after {
                 right: -3px;
-                transition: .3s linear;
+                
             }
         }
     }

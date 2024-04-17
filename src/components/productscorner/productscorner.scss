@@ -196,10 +196,13 @@
                                                 }
                                             }
 
+                                            a{
+                                                transition: .3s ease;
+                                            }
+
                                             a:hover {
 
                                                 color: var(--primarycolor);
-                                                transition: .3s ease;
 
 
                                                 // span {

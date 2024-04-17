@@ -84,6 +84,7 @@
 
                         a {
                             color: #a5a5a5;
+                            transition: all 0.2s linear;
                         }
 
                         a:hover {
@@ -152,6 +153,7 @@
                                 font-size: 14px;
                                 font-family: var(--primary-family);
                                 font-weight: 700;
+                                transition: all 0.3s ease-in linear;
                             }
 
                             // a::before {
@@ -173,7 +175,7 @@
                             a:hover {
                                 color: black;
                                 background-color: var(--primarycolor);
-                                transition: 0.3s ease-in linear;
+                                
 
                             }
 
