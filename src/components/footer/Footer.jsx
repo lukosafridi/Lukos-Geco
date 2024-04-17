@@ -124,8 +124,8 @@ const Footer = () => {
                     <span></span>
                     <ul className='socials'>
                         {social.map((item, index) => (
-                            <li>
-                                <Link key={index} to={item.send}><img src={item.icon} alt="" /></Link>
+                            <li key={index}>
+                                <Link to={item.send}><img src={item.icon} alt="" /></Link>
                             </li>
                         ))}
                     </ul>
