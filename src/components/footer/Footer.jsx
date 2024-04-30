@@ -60,6 +60,7 @@ const Footer = () => {
             title: "FAQUse Cases",
             send: "#"
         },
+        
     ]
 
     const social = [
@@ -69,7 +70,7 @@ const Footer = () => {
         },
         {
             icon: instagram,
-            send: "#"
+            send: "instagram.com"
         },
         {
             icon: facebook,
@@ -77,7 +78,7 @@ const Footer = () => {
         },
         {
             icon: linkedin,
-            send: "#"
+            send: "linkedin.com"
         },
     ]
 
