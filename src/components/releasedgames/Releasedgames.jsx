@@ -11,7 +11,7 @@ import releasedgamenav03 from '../../assets/release_game_nav03.jpg';
 
 
 
-const Responsive = () => {
+const Responsive = ({ sliderRef }) => {
 
 
 
@@ -54,7 +54,7 @@ const Responsive = () => {
 
 
 
-  var settings = {
+  const settings = {
     dots: false,
     infinite: true,
     speed: 500,
@@ -88,9 +88,12 @@ const Responsive = () => {
       }
     ]
   };
+
+
+
   return (
     <div className="slider-container">
-      <Slider {...settings}>
+      <Slider ref={sliderRef} {...settings}>
         {releasedgames.map((games, index) => (
           <div className='slide-box' key={index}>
             <div className="item-image">
@@ -123,15 +126,29 @@ const Releasedgames = () => {
 
   const veriimgs = [
     {
-      img: releasedgamenav01
+      img: releasedgamenav01,
+      id: 0
     },
     {
-      img: releasedgamenav02
+      img: releasedgamenav02,
+      id: 1
     },
     {
-      img: releasedgamenav03
+      img: releasedgamenav03,
+      id: 2
     },
-  ]
+  ];
+
+
+  const sliderRef = React.useRef(null);
+
+  const imgclick = (img) => {
+    console.log('Image clicked:', img);
+    if (sliderRef.current) {
+      sliderRef.current.slickGoTo(img.id);
+    }
+  };
+  
 
   return (
     <div className='releasedgames-main'>
@@ -141,12 +158,13 @@ const Releasedgames = () => {
       </div>
       <div className="released-games-slider">
         <div className='hori-slider'>
-          <Responsive />
+          <Responsive sliderRef={sliderRef} />
         </div>
         <div className="veri-slider">
-          {veriimgs.map((imgs, index) => {
+          {veriimgs.map((imgs, index, ) => {
             return (
               <motion.img
+                id={imgs.id}
                 key={index}
                 whileHover={{
                   scale: 1.1, transition: { duration: .1 }
@@ -154,7 +172,9 @@ const Releasedgames = () => {
                 whileTap={{
                   scale: .9, transition: { duration: .1 }
                 }}
-                src={imgs.img} alt="" />
+                src={imgs.img} alt="" 
+                onClick={() => imgclick(imgs)}
+                />
             )
           })}
           {/* <Responsive2 /> */}
